@@ -30,6 +30,11 @@ Partial Class Form1
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.listaEmpleado = New System.Windows.Forms.ListBox()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -62,6 +67,11 @@ Partial Class Form1
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.Button7)
+        Me.TabPage2.Controls.Add(Me.Button6)
+        Me.TabPage2.Controls.Add(Me.Button5)
+        Me.TabPage2.Controls.Add(Me.listaEmpleado)
+        Me.TabPage2.Controls.Add(Me.txtNombre)
         Me.TabPage2.Controls.Add(Me.Button3)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
@@ -118,6 +128,48 @@ Partial Class Form1
         Me.Button4.Text = "Regresar"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'txtNombre
+        '
+        Me.txtNombre.Location = New System.Drawing.Point(252, 95)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(227, 20)
+        Me.txtNombre.TabIndex = 1
+        '
+        'listaEmpleado
+        '
+        Me.listaEmpleado.FormattingEnabled = True
+        Me.listaEmpleado.Location = New System.Drawing.Point(569, 68)
+        Me.listaEmpleado.Name = "listaEmpleado"
+        Me.listaEmpleado.Size = New System.Drawing.Size(120, 95)
+        Me.listaEmpleado.TabIndex = 2
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(252, 132)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 3
+        Me.Button5.Text = "Agregar"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(569, 185)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 4
+        Me.Button6.Text = "Contar todos"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(569, 230)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
+        Me.Button7.TabIndex = 5
+        Me.Button7.Text = "Contar A"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -129,6 +181,7 @@ Partial Class Form1
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.TabPage2.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -142,4 +195,9 @@ Partial Class Form1
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents listaEmpleado As ListBox
+    Friend WithEvents txtNombre As TextBox
 End Class
